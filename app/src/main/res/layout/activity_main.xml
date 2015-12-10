@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- I just like linearLayouts (vertical) so i use them. Feel free to use relativeLayouts if you wish. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.geekware.geekware.MainActivity">
+
+    <!-- Our screen will be divided vertically in 5x space with 2.5x space
+         then 1x space for the buttons and then 1.5x space -->
+
+    <!-- LinearLayout (blank) to act as placeholder for space -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Try to follow the below conventions throughout the app.
+             Button ids start with 'btn' also NEVER use strings directly in xml files.
+             Always make strings in values->strings.xml file and then use them through
+             their id in layouts. Always start string ids with 'str'.
+             Use RRGGBB color coding for colors (as in HTML).
+             Also always keep the id attribute the first one so it is clearly visible. -->
+
+        <!-- TODO: The background color will be replaced by background image for the button.
+             TODO: Also the font of the button will be set in java file.
+             TODO: Also the background image for this activity has to be set.
+             Only the text Color will be set here.
+                   Vibhor bhaiya has to provide both. -->
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:text="@string/strSignUp"
+            android:textAllCaps="true"
+            android:textColor="#eeef12"
+            android:background="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/strLogin"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#eeef12"
+            android:background="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"></LinearLayout>
+
+
+</LinearLayout>

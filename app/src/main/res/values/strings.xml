@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GeekWare</string>
+
+    <!-- strings in activity_mail.xml -->
+    <string name="strSignUp">Sign Up</string>
+    <string name="strLogin">Login</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+</resources>
