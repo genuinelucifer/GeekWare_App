@@ -38,7 +38,7 @@
                    Vibhor bhaiya has to provide both. -->
 
         <Button
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnProceedSignUp"
             android:text="@string/strSignUp"
             android:textAllCaps="true"
             android:textColor="#eeef12"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnProceedLogin"
             android:text="@string/strLogin"
             android:textAllCaps="true"
             android:layout_marginTop="10dp"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <!-- The same menu can be used in each screen -->
+
+    <item android:id="@+id/action_Logout"
+        android:title="@string/action_logout"
+        android:icon="@drawable/ic_action_logout"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

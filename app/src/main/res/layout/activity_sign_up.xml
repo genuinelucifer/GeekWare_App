@@ -5,17 +5,60 @@
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:background="#101010"
     tools:context="com.geekware.geekware.SignUpActivity">
 
     <!-- We need background @null to keep the EditText transparent -->
 
     <EditText
-        android:id="@+id/etUserId"
+        android:id="@+id/etUserIdSignUp"
         android:layout_gravity="center_horizontal"
         android:background="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#eeef23" />
+
+    <EditText
+        android:id="@+id/etPassSignUp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#eeef23" />
+
+    <EditText
+        android:id="@+id/etRePassSignUp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#eeef23" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="@string/termsNConditions" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:text="@string/strSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

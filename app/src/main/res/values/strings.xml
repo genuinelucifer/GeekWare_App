@@ -1,10 +1,28 @@
 <resources>
+
+    <!-- Other Strings -->
     <string name="app_name">GeekWare</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_logout">LogOut</string>
 
     <!-- strings in activity_mail.xml -->
     <string name="strSignUp">Sign Up</string>
     <string name="strLogin">Login</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string name="title_activity_login">LoginActivity</string>
+
+    <!-- Error Messages -->
+    <string name="pass_no_match_error_msg">The passwords do NOT match!</string>
+    <string name="signup_error_message">Please make sure you enter a username, password, and email address!</string>
+    <string name="signup_error_title">Error!</string>
+    <string name="login_error_message">Please make sure you enter a username and password!</string>
+    <string name="login_error_title">Error!</string>
+    <string name="verify_email_title">Email NOT verified!</string>
+    <string name="verify_email_msg">Your email is NOT verified yet!\nPlease verify your email before login.</string>
+    <string name="no_internet_msg">Internet connection could not be established. \nPlease verify that you are connected through an active connection.</string>
+    <string name="no_internet_title">Could NOT connect!</string>
+
+    <!-- strings in activity_sign_up.xml -->
+    <string name="termsNConditions">By signing up, you agree to our Terms of Service.</string>
 
 </resources>

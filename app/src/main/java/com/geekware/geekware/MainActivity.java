@@ -23,8 +23,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSignUp = (Button) findViewById(R.id.btnSignUp);
-        btnLogin  = (Button) findViewById(R.id.btnLogin);
+        btnSignUp = (Button) findViewById(R.id.btnProceedSignUp);
+        btnLogin  = (Button) findViewById(R.id.btnProceedLogin);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +41,14 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(i);
             }
         });
+
+        /* If the user didn't logout the previous time then log him in again automatically. */
+        if(Utilities.checkLoggedInUser())
+        {
+            Intent i = new Intent(MainActivity.this, HomeActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
+        }
     }
 
 }

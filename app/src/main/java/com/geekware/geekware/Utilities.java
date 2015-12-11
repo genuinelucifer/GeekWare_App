@@ -39,7 +39,7 @@ public class Utilities {
         curUser = ParseUser.getCurrentUser();
         return curUser != null;
     }
-    public static void setCurUser(ParseUser usr)
+    public static void setCurrentUser(ParseUser usr)
     {
         curUser = usr;
     }
