@@ -1,8 +1,10 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
+bin/
+app/build/
+gen/
 /build
 /captures
+lint.xml
+build.xml
+*.apk
+.gradle/
+.idea/
